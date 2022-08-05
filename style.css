@@ -1,0 +1,159 @@
+:root{
+    --main-color:rgb(34, 166, 179,1.0);
+    --main-color-light:rgb(34, 166, 179,0.5);
+    --accent-color:rgb(48, 51, 107,1.0);
+    --accent-color-light:rgb(48, 51, 107,0.5);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Koulen', cursive;
+    background-image: linear-gradient(to bottom right, var(--main-color),var(--accent-color-light));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+
+
+.main-title
+{
+    font-size: 3rem;
+    color: white;
+}
+
+.header, .task-form
+{
+    min-height: 5vh;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+
+}
+
+.input-task{
+    width: 500px;
+}
+
+.form-item
+{
+    padding: 0.1rem;
+    font-size:1.2rem;
+    border: none;
+    background-color: white;
+    outline: none;
+    border-radius: 4px;
+    height: 35px;
+
+}
+
+.btn-task-push
+{
+    color: var(--main-color);
+    cursor: pointer;
+    width: 35px;
+}
+.btn-task-push
+{
+    color: white;
+    background-color: var(--accent-color-light);
+}
+
+.task-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.task-list
+{
+    min-width: 30%;
+}
+
+.task-item
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    font-size: 1rem;
+    background-color: white;
+    border-radius: 4px;
+    
+    
+}
+
+.desc
+{
+    flex:1;
+    padding: .1rem;
+}
+
+.task-btn
+{
+    background-color: var(--accent-color-light);
+    outline: none;
+    border: none; 
+    font-size: 1rem;
+    padding: .5rem;
+    cursor: pointer;
+    
+}
+
+.task-btn-delete
+{
+    background-color: var(--accent-color);
+}
+
+.task-btn-edit{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    width: 30px;
+}
+
+.task-completed
+{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.radio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.radio1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.completed{
+    display: flex;
+}
